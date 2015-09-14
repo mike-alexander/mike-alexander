@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MichaelAlexander.io</title>
+    <description>Blogging about .NET, Javascript, startups and life.
+</description>
+    <link>http://michaelalexander.io/</link>
+    <atom:link href="http://michaelalexander.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 14 Sep 2015 21:14:56 +0100</pubDate>
+    <lastBuildDate>Mon, 14 Sep 2015 21:14:56 +0100</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Backbone-DocumentModel</title>
+        <description>&lt;p&gt;I’ve been working on a single page web appliction using &lt;a href=&quot;http://backbonejs.org/&quot;&gt;Backbone JS&lt;/a&gt; and &lt;a href=&quot;http://marionettejs.com/&quot;&gt;Marionette&lt;/a&gt; recently.
+When working on one of the sections I wanted to create a parent-child view hierarchy:  a parent LayoutView which has a 
+CompositeView child, as well as a CollectionView which itself has children CollectionViews.&lt;/p&gt;
+
+&lt;p&gt;Implementing this, I discovered something weird about Backbone models and collections: you can’t have deeply nested 
+model/collection structures by default; it’s not possible to have a Backbone model which has Backbone models
+as properties of it.&lt;/p&gt;
+
+&lt;p&gt;There are a few Backbone plugins which address this issue. The one I chose was &lt;a href=&quot;https://github.com/icereval/backbone-documentmodel&quot;&gt;Backbone-DocumentModel&lt;/a&gt;.
+This plugin even allows you to specify custom types as children of a particular model; so you can extend Backbone.Model
+and have that type as a property of another Backbone.Model implementation.&lt;/p&gt;
+
+&lt;p&gt;It looks like the &lt;a href=&quot;https://github.com/icereval/backbone-documentmodel&quot;&gt;Backbone-DocumentModel&lt;/a&gt; project on Github might have been abandoned.  You’ll notice if you try
+install it through Bower, the latest version available is 0.6.0 although the version you’ll actually want is 0.6.4.  This is
+because the owner of the repo has not created a release for 0.6.4.  As a work-around, &lt;a href=&quot;https://github.com/mike-alexander/backbone-documentmodel&quot;&gt;I forked their repo&lt;/a&gt;,
+created a version for 0.6.4 and registered it as a fresh Bower module.  I’ve named it backbone.documentmodel (as opposed
+to backbone-documentmodel which is the original).&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 30 May 2015 14:50:51 +0100</pubDate>
+        <link>http://michaelalexander.io/js,/backbone/2015/05/30/backbone-document-model.html</link>
+        <guid isPermaLink="true">http://michaelalexander.io/js,/backbone/2015/05/30/backbone-document-model.html</guid>
+        
+        
+        <category>js,</category>
+        
+        <category>backbone</category>
+        
+      </item>
+    
+      <item>
+        <title>Hello, world!</title>
+        <description>&lt;p&gt;I’ve just set myself up with my new website and blog.  I wanted somewhere to note down my technical problems and how I (attempt to) 
+solve them, as well as my thoughts on the tech world, startups and life.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h2&gt;
+&lt;p&gt;I built the website using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll: the blog-aware static website generator&lt;/a&gt;.  It’s really an amazing tool.  Basically, you define your
+posts in &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; (or you can write a converter for any markup you prefer), and Jekyll churns out your whole blog/website 
+as static html files which you deploy to your server.  No databases or expensive server-side processing, just super fast static files.
+It makes use of the &lt;a href=&quot;http://liquidmarkup.org/&quot;&gt;Liquid templating system&lt;/a&gt;, allowing you to split your website into re-usable components, implement pagination,
+use conditional logic and more.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 10 May 2015 17:30:51 +0100</pubDate>
+        <link>http://michaelalexander.io/news/2015/05/10/hello-world.html</link>
+        <guid isPermaLink="true">http://michaelalexander.io/news/2015/05/10/hello-world.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>
